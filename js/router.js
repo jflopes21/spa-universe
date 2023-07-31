@@ -45,6 +45,13 @@ export class Router {
           });
           document.querySelector("#universe").classList.add("a-active");
         }
+        if (route == "/pages/home.html") {
+          const links = document.querySelectorAll("nav a");
+          links.forEach((link) => {
+            link.classList.remove("a-active");
+          });
+          document.querySelector("#home").classList.add("a-active");
+        }
       });
   }
 }
