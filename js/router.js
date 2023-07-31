@@ -39,6 +39,13 @@ export class Router {
           app.classList.remove("app-default");
           app.classList.add("app-home");
         }
+        if (route == "/pages/universe.html") {
+          const links = document.querySelectorAll("nav a");
+          links.forEach((link) => {
+            link.classList.remove("a-active");
+          });
+          document.querySelector("#universe").classList.add("a-active");
+        }
       });
   }
 }
