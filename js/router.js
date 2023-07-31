@@ -10,7 +10,6 @@ export class Router {
     event = event || window.event;
     event.preventDefault();
     window.history.pushState({}, "", event.target.href);
-
     const links = document.querySelectorAll("nav a");
     links.forEach((link) => {
       link.classList.remove("a-active");
